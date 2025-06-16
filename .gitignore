@@ -53,5 +53,60 @@ sovereign_trace.log
 # 🚀 Auto-Deploys, NFTs & Smart Contracts
 deploy_keys/
 mint_config/
+eth_wallet_backup.json# === gTek Sovereign Git Ignore Protocol v2.2.2.2 ===
+
+# 🚫 System & Environment Secrets
+.env
+secure.key
+*.pem
+*.key
+
+# 🔒 Cryptographic / Vault Files
+enc_pass.txt
+vault.json
+master_audit.log
+*.enc
+*.vault
+
+# 📦 Package Directories & Build Artifacts
+node_modules/
+__pycache__/
+*.egg-info/
+dist/
+build/
+coverage/
+
+# 💻 IDE & OS Configs
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# ⚙️ OS-Specific, Logs, and Temp Files
+*.log
+*.tmp
+*.bak
+Thumbs.db
+ehthumbs.db
+
+# 🔁 Sovereign Archives & Compression Artifacts
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
+# 📄 gTek Specifics
+gTek_Dad_Tok_Audit/
+gTek_MasterKeyAudit.py
+gTek_SecureEnv_Setup.py
+LICENSE.md
+codex_meta.json
+sovereign_trace.log
+
+# 🚀 Auto-Deploys, NFTs & Smart Contracts
+deploy_keys/
+mint_config/
 eth_wallet_backup.json
 .env

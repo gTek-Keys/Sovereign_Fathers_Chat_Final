@@ -1,48 +1,59 @@
-# === gTek Sovereign Git Ignore Protocol v2.2.2.2 ===
+# === gTek Sovereign Git Ignore Protocol v2.3 ===
 
-# 🚫 System & Environment Secrets
+# 🛡️ Secrets & Keys
 .env
 secure.key
 *.pem
 *.key
+*.crt
 
-# 🔒 Cryptographic / Vault Files
+# 🔐 Encrypted / Vault Files
+*.enc
+*.vault
 enc_pass.txt
 vault.json
 master_audit.log
-*.enc
-*.vault
 
-# 📦 Package Directories & Build Artifacts
+# 📦 Dependency & Build Artifacts
 node_modules/
+bower_components/
 __pycache__/
 *.egg-info/
 dist/
 build/
 coverage/
+.cache/
+.parcel-cache/
 
-# 💻 IDE & OS Configs
-.vscode/
-.idea/
-.DS_Store
-*.swp
-*.sublime-project
-*.sublime-workspace
-
-# ⚙️ OS-Specific, Logs, and Temp Files
+# 🧠 Logs, Temp & System Output
 *.log
 *.tmp
 *.bak
+*.swp
+*.swo
+
+# 💻 IDE, Editor & OS Metadata
+.vscode/
+.idea/
+.DS_Store
 Thumbs.db
 ehthumbs.db
+*.sublime-project
+*.sublime-workspace
 
-# 🔁 Sovereign Archives & Compression Artifacts
+# 🔁 Archives & Deployment Packages
 *.zip
 *.tar.gz
 *.7z
 *.rar
 
-# 📄 gTek Specifics
+# 🚫 System State & Session
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# 📄 gTek Project-Specific
 gTek_Dad_Tok_Audit/
 gTek_MasterKeyAudit.py
 gTek_SecureEnv_Setup.py
@@ -50,63 +61,10 @@ LICENSE.md
 codex_meta.json
 sovereign_trace.log
 
-# 🚀 Auto-Deploys, NFTs & Smart Contracts
-deploy_keys/
-mint_config/
-eth_wallet_backup.json# === gTek Sovereign Git Ignore Protocol v2.2.2.2 ===
-
-# 🚫 System & Environment Secrets
-.env
-secure.key
-*.pem
-*.key
-
-# 🔒 Cryptographic / Vault Files
-enc_pass.txt
-vault.json
-master_audit.log
-*.enc
-*.vault
-
-# 📦 Package Directories & Build Artifacts
-node_modules/
-__pycache__/
-*.egg-info/
-dist/
-build/
-coverage/
-
-# 💻 IDE & OS Configs
-.vscode/
-.idea/
-.DS_Store
-*.swp
-*.sublime-project
-*.sublime-workspace
-
-# ⚙️ OS-Specific, Logs, and Temp Files
-*.log
-*.tmp
-*.bak
-Thumbs.db
-ehthumbs.db
-
-# 🔁 Sovereign Archives & Compression Artifacts
-*.zip
-*.tar.gz
-*.7z
-*.rar
-
-# 📄 gTek Specifics
-gTek_Dad_Tok_Audit/
-gTek_MasterKeyAudit.py
-gTek_SecureEnv_Setup.py
-LICENSE.md
-codex_meta.json
-sovereign_trace.log
-
-# 🚀 Auto-Deploys, NFTs & Smart Contracts
+# 🚀 NFT / Web3 Deploys
 deploy_keys/
 mint_config/
 eth_wallet_backup.json
-.env
+.env.local
+.env.production
+.env.development

@@ -11,6 +11,9 @@ Welcome to the **Sovereign Fathers Chat** powered by **gTek Industries**, **Migh
 - `Tok_Sovereign_CustomGPT.json` — Codex behavior blueprint
 - `.gitignore` — Advanced privacy and asset exclusion protocol
 - `LICENSE` — OmniLicense v2.2.2.2 (Creative IP + Blockchain Jurisdiction)
+- `scripts/` — Python scripts for audits
+- `logs/` — audit logs
+- `notebooks/` — Jupyter summaries
 
 ---
 
@@ -60,3 +63,10 @@ All assets are protected under **gTek Industries OmniLicense v2.2.2.2**.
 git clone https://github.com/gTek-Keys/Sovereign_Fathers_Chat_Final.git
 cd Sovereign_Fathers_Chat_Final
 pip install -r requirements.txt
+
+```
+
+### Repository Layout
+- `scripts/` — core audit and sweep scripts
+- `logs/` — audit logs
+- `notebooks/` — Jupyter summaries

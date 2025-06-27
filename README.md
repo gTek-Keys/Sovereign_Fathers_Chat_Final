@@ -70,3 +70,14 @@ pip install -r requirements.txt
 - `scripts/` — core audit and sweep scripts
 - `logs/` — audit logs
 - `notebooks/` — Jupyter summaries
+
+### Launching an Audit
+
+Run the digestive sweep script to generate a log entry and summary notebook:
+
+```bash
+python scripts/gTek_digestive_sweep.py
+```
+
+This writes to `logs/gTek_Audit_Log.md` and creates or updates
+`notebooks/gTek_Audit_Summary.ipynb`.

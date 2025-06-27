@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gTek Real Estate NFT Mint</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🏠 gTek Real Estate NFT Platform</h1>
+        <p>Create smart contracts and mint property-backed NFTs</p>
+    </header>
+
+    <section id="property-form">
+        <h2>Property Details</h2>
+        <label>
+            Address
+            <input type="text" id="propAddress" placeholder="123 Liberty Ave" />
+        </label>
+        <label>
+            Description
+            <textarea id="propDesc" placeholder="Property description..."></textarea>
+        </label>
+        <label>
+            Image URL
+            <input type="url" id="propImg" placeholder="https://..." />
+        </label>
+    </section>
+
+    <section id="contract-form">
+        <h2>Contract Details</h2>
+        <label>
+            Owner Wallet
+            <input type="text" id="ownerWallet" placeholder="0x..." />
+        </label>
+        <label>
+            Price (ETH)
+            <input type="number" id="price" step="0.01" />
+        </label>
+    </section>
+
+    <div class="buttons">
+        <button id="generateContract">Generate Contract</button>
+        <button id="mintNft">Mint NFT</button>
+    </div>
+
+    <pre id="output"></pre>
+
+    <script src="app.js"></script>
+</body>
+</html>

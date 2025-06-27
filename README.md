@@ -70,6 +70,7 @@ pip install -r requirements.txt
 - `scripts/` — core audit and sweep scripts
 - `logs/` — audit logs
 - `notebooks/` — Jupyter summaries
+- `web/` — HTML prototype for minting real estate NFTs
 
 ### Launching an Audit
 
@@ -81,3 +82,13 @@ python scripts/gTek_digestive_sweep.py
 
 This writes to `logs/gTek_Audit_Log.md` and creates or updates
 `notebooks/gTek_Audit_Summary.ipynb`.
+
+### Launching the Web Prototype
+
+Open `web/index.html` in a browser or serve the folder locally:
+
+```bash
+python -m http.server --directory web 8080
+```
+
+Then visit `http://localhost:8080` to explore the contract and NFT interface.

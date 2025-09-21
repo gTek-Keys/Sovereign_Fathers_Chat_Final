@@ -8,9 +8,9 @@ import subprocess
 from pathlib import Path
 
 # === Configuration ===
-repo_dir = Path.home() / "Sovereign_Fathers_Chat_Final"
-log_file = repo_dir / "gTek_Audit_Log.md"
-notebook_file = repo_dir / "gTek_Audit_Summary.ipynb"
+repo_dir = Path(__file__).resolve().parents[1]
+log_file = repo_dir / "logs" / "gTek_Audit_Log.md"
+notebook_file = repo_dir / "notebooks" / "gTek_Audit_Summary.ipynb"
 timestamp = datetime.datetime.now().isoformat()
 
 # === Step 1: Sweep Audit Function ===

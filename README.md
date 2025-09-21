@@ -11,6 +11,9 @@ Welcome to the **Sovereign Fathers Chat** powered by **gTek Industries**, **Migh
 - `Tok_Sovereign_CustomGPT.json` — Codex behavior blueprint
 - `.gitignore` — Advanced privacy and asset exclusion protocol
 - `LICENSE` — OmniLicense v2.2.2.2 (Creative IP + Blockchain Jurisdiction)
+- `scripts/` — Python scripts for audits
+- `logs/` — audit logs
+- `notebooks/` — Jupyter summaries
 
 ---
 
@@ -60,3 +63,32 @@ All assets are protected under **gTek Industries OmniLicense v2.2.2.2**.
 git clone https://github.com/gTek-Keys/Sovereign_Fathers_Chat_Final.git
 cd Sovereign_Fathers_Chat_Final
 pip install -r requirements.txt
+
+```
+
+### Repository Layout
+- `scripts/` — core audit and sweep scripts
+- `logs/` — audit logs
+- `notebooks/` — Jupyter summaries
+- `web/` — HTML prototype for minting real estate NFTs
+
+### Launching an Audit
+
+Run the digestive sweep script to generate a log entry and summary notebook:
+
+```bash
+python scripts/gTek_digestive_sweep.py
+```
+
+This writes to `logs/gTek_Audit_Log.md` and creates or updates
+`notebooks/gTek_Audit_Summary.ipynb`.
+
+### Launching the Web Prototype
+
+Open `web/index.html` in a browser or serve the folder locally:
+
+```bash
+python -m http.server --directory web 8080
+```
+
+Then visit `http://localhost:8080` to explore the contract and NFT interface.
